@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: var(--white);
 }
 
@@ -47,7 +46,6 @@ a:hover {
 
 /* --- Container ---*/
 
-
 /* --- Header ---*/
 
 header {
@@ -60,25 +58,22 @@ header {
     background-color: var(--bg-color);
 }
 
-    nav {
-        
-        width: 30%;
-        display: flex;
-        justify-content: end;
-        
-    }
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
-            nav li {
-                margin-left: 40px;
-            }
+nav li {
+    margin-left: 40px;
+}
 
 /* --- Header ---*/
-
 
 /* --- Main ---*/
 
@@ -87,99 +82,108 @@ main {
     justify-content: space-between;
 }
 
-    .icons {
-       
-        width: 10%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.icons {
+    margin-left: -10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-        .icons-icon {
-            background-color: violet;
-            width: 40px;
-            height: 40px;
-            margin: 10px 0;
-        }
+.icons-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
 
-        #linkedin {
-            background-image: url();
-        }
+#linkedin {
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto09/blob/main/icons/linkedin.png?raw=true);
+}
 
-    .name-dev {
-        
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
+#github {
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto09/blob/main/icons/github.png?raw=true);
+}
 
-        .name-dev h1 {
-            font-size: 6rem;
-            font-weight: bold;
-            color: white;
+#behance {
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto09/blob/main/icons/behance.png?raw=true);
+}
 
-        }
+#mail {
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto09/blob/main/icons/mail.png?raw=true);
+}
 
-        .name-dev p {
-            background: linear-gradient(-70deg, #00ff84 0%, #59a7ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
-            font-size: 3rem;
-            
+#linkedin,
+#github,
+#behance,
+#mail {
+    filter: invert(1);
+    background-repeat: none;
+    background-size: cover;
+}
 
-        }
+.name-dev {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.name-dev h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.name-dev p {
+    background: linear-gradient(-70deg, #00ff84 0%, #59a7ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 3rem;
+}
 
 /* --- Main --- */
-
 
 /* --- Section 1 - Projetos --- */
 
 .projetos {
-    
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-    .grid-section {
-        width: 100%;
-        height: 100%;
-        background-color: yellow;
+.grid-section {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
 
-        .grid-section__item {
-            background-color: yellowgreen;
-            width: 100%;
-            height: 100%;
-        }
-
+.grid-section__item {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 100%;
+}
 
 /* --- Section 1 - Projetos --- */
 
-
-
 /* --- Section 2 - Sobre --- */
 
-.sobre{
+.sobre {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    
 }
 
 .sobre-titulo {
@@ -201,27 +205,21 @@ main {
     margin-top: 20px;
 }
 
-.sobre-titulo button a{
+.sobre-titulo button a {
     text-decoration: none;
 }
 
-
-.sobre-c{
-    
+.sobre-c {
     height: 100vh;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
- 
 }
 
 .sobre-container {
-   
     margin: 10px 0;
-
-
 }
 
 .sobre-container ul {
@@ -264,9 +262,6 @@ main {
 .contato p {
     margin-top: 20px;
 }
-
-
-
 
 /* --- Section 3 - Contato --- */
 
