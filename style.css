@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    --bg-color: #1a1a1a;
+    --white: #fff;
+    --gradient-start: rgb(0, 51, 255);
+    --gradient-end: rgb(0, 247, 255);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: turquoise;
+}
+
+/* --- Container ---*/
+
+.container {
+    width: 80vw;
+    height: 100%;
+}
+
+.vh {
+    height: 100vh;
+}
+
+/* --- Container ---*/
+
+
+/* --- Header ---*/
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    width: 80vw;
+    background-color: var(--bg-color);
+}
+
+    nav {
+        
+        width: 30%;
+        display: flex;
+        justify-content: end;
+        
+    }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+            nav li {
+                margin-left: 40px;
+            }
+
+/* --- Header ---*/
+
+
+/* --- Main ---*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .icons {
+       
+        width: 10%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .icons-icon {
+            background-color: violet;
+            width: 40px;
+            height: 40px;
+            margin: 10px 0;
+        }
+
+        #linkedin {
+            background-image: url();
+        }
+
+    .name-dev {
+        
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+        .name-dev h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .name-dev p {
+            background: linear-gradient(-70deg, #00ff84 0%, #59a7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            font-size: 3rem;
+            
+
+        }
+
+/* --- Main --- */
+
+
+/* --- Section 1 - Projetos --- */
+
+.projetos {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .grid-section {
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+        .grid-section__item {
+            background-color: yellowgreen;
+            width: 100%;
+            height: 100%;
+        }
+
+
+/* --- Section 1 - Projetos --- */
+
+
+
+/* --- Section 2 - Sobre --- */
+
+.sobre{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.sobre-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.sobre-titulo h1 {
+    font-size: 60px;
+}
+
+.sobre-titulo button {
+    background-color: var(--bg-color);
+    border: solid 1px var(--white);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.sobre-titulo button a{
+    text-decoration: none;
+}
+
+
+.sobre-c{
+    
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ 
+}
+
+.sobre-container {
+   
+    margin: 10px 0;
+
+
+}
+
+.sobre-container ul {
+    margin: 10px 0;
+    list-style: none;
+}
+
+/* --- Section 2 - Sobre --- */
+
+/* --- Section 3 - Contato --- */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-radius: 100%;
+}
+
+.contato h2 {
+    margin-top: 20px;
+}
+
+.contato ul {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.contato ul li {
+    margin: 0 20px;
+}
+
+.contato p {
+    margin-top: 20px;
+}
+
+
+
+
+/* --- Section 3 - Contato --- */
+
+/* --- Footer --- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    padding: 20px 0;
+}
+
+/* --- Footer --- */
