@@ -294,7 +294,7 @@ nav ul li {
 /* Sobre */
 
 .sobre {
-    height: auto;
+    height: 100vh;
     padding-top: 150px;
 }
 
@@ -424,7 +424,7 @@ nav {
 }
 
 nav ul li {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .dev-name {
