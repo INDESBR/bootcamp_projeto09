@@ -307,7 +307,6 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -395,7 +394,7 @@ nav ul li {
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 760px) {
 
 
 
@@ -448,6 +447,7 @@ nav ul li {
 
 .projetos-container {
    height: auto;
+   
 }
 
 .grid {
@@ -471,11 +471,12 @@ nav ul li {
 
 .sobre-container {
     height: auto;
+    flex-direction: column;
 }
 
 .sb {
     height: 250px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .contato-container ul li{
